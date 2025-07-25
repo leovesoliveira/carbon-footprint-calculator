@@ -11,12 +11,15 @@ This project is divided into two parts:
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) (v18 or newer recommended)
+- [Node.js](https://nodejs.org/) (v20 or newer recommended)
 
 ### 1. Clone the Repository
 
 ```sh
 git clone https://github.com/leovesoliveira/carbon-footprint-calculator.git
+```
+
+```sh
 cd carbon-footprint-calculator
 ```
 
@@ -24,7 +27,13 @@ cd carbon-footprint-calculator
 
 ```sh
 cd backend
+```
+
+```sh
 npm install
+```
+
+```sh
 npm run start:dev
 ```
 
@@ -38,7 +47,13 @@ Open a new terminal and run:
 
 ```sh
 cd frontend
+```
+
+```sh
 npm install
+```
+
+```sh
 npm run dev
 ```
 

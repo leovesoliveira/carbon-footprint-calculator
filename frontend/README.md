@@ -6,21 +6,25 @@ Responsive web application for calculating your carbon footprint, built with **R
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) (v18 or newer recommended)
+- [Node.js](https://nodejs.org/) (v20 or newer recommended)
 
 ### Installation
 
 1. **Clone the repository:**
 
-   ```sh
-   git clone https://github.com/leovesoliveira/carbon-footprint-calculator.git
-   cd carbon-footprint-calculator/frontend
-   ```
+```sh
+git clone https://github.com/leovesoliveira/carbon-footprint-calculator.git
+```
+
+```sh
+cd carbon-footprint-calculator/frontend
+```
 
 2. **Install dependencies:**
-   ```sh
-   npm install
-   ```
+
+```sh
+npm install
+```
 
 ### Running the App
 
