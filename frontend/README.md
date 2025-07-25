@@ -13,7 +13,7 @@ Responsive web application for calculating your carbon footprint, built with **R
 1. **Clone the repository:**
 
    ```sh
-   git clone https://github.com/your-username/carbon-footprint-calculator.git
+   git clone https://github.com/leovesoliveira/carbon-footprint-calculator.git
    cd carbon-footprint-calculator/frontend
    ```
 
