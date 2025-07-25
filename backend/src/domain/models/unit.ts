@@ -1,0 +1,14 @@
+export enum Unit {
+  KILOWATT_HOURS_PER_YEAR = 'kWh/yr',
+  THERMS_PER_YEAR = 'therms/yr',
+  LITRES_PER_YEAR = 'litres/yr',
+  LITRES_PER_DAY = 'litres/day',
+  KILOGRAMS_PER_WEEK = 'kg/week',
+  KILOMETER_PER_YEAR = 'km/yr',
+  KILOGRAMS_OF_CARBON_PER_KILOWATT_HOUR = 'kg CO2e/kWh',
+  KILOGRAMS_OF_CARBON_PER_THERM = 'kg CO2e/therms',
+  KILOGRAMS_OF_CARBON_PER_LITRE = 'kg CO2e/litre',
+  KILOGRAMS_OF_CARBON_PER_KILOGRAM = 'kg CO2e/kg',
+  KILOGRAMS_OF_CARBON_PER_KILOMETER = 'kg CO2e/km',
+  KILOGRAMS_OF_CARBON_PER_YEAR = 'kg CO2e/yr',
+}
