@@ -1,6 +1,6 @@
 # Carbon Footprint Calculator | Backend
 
-A API for calculating your carbon footprint, built with [NestJS](https://nestjs.com/).
+API for calculating your carbon footprint, built with [NestJS](https://nestjs.com/).
 
 ## Getting Started
 
@@ -49,12 +49,12 @@ npm run test:e2e
 ```
 backend/
 ├── src/
-│   ├── adapters/
-│   ├── domain/
-│   ├── handlers/
-│   ├── ports/
-│   ├── app.module.ts
-│   └──main.ts
+│   ├── adapters/       # Http and database adapters
+│   ├── domain/         # Business logics, entity and value objects
+│   ├── handlers/       # Domain handlers
+│   ├── ports/          # Contracts for handlers and adapters
+│   ├── app.module.ts   # NestJS modules setup
+│   └──main.ts          # App entry point
 ```
 
 ### API Endpoints
@@ -62,7 +62,10 @@ backend/
 #### Health Check
 
 - **GET** `/health`
-  - Response: `{ "message": "Health Check Ok!" }`
+  - Response:
+    ```json
+    { "message": "Health Check Ok!" }
+    ```
 
 #### Calculate Carbon Footprint
 
