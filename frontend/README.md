@@ -42,17 +42,17 @@ npm run test
 
 ```
 frontend/
-├── public/                # Static assets
+├── public/             # Static assets
 ├── src/
-│   ├── components/        # React Components (Atomic Design Structure)
-│   ├── hooks/             # Custom React hooks
-│   ├── services/          # Services contracts and implementations
-│   ├── shared/            # Shared types and constants
-│   ├── stores/            # Zustand stores for state management
-│   ├── index.css          # Tailwind CSS entry
-│   ├── main.tsx           # App entry point
-│   └── setupTests.ts      # Test setup
-└── index.html             # HTML entry point
+│   ├── components/     # React Components (Atomic Design Structure)
+│   ├── hooks/          # Custom React hooks
+│   ├── services/       # Services contracts and implementations
+│   ├── shared/         # Shared types and constants
+│   ├── stores/         # Zustand stores for state management
+│   ├── index.css       # Tailwind CSS entry
+│   ├── main.tsx        # App entry point
+│   └── setupTests.ts   # Test setup
+└── index.html          # HTML entry point
 ```
 
 ## API
