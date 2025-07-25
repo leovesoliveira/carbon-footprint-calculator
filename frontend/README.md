@@ -1,69 +1,68 @@
-# React + TypeScript + Vite
+# Carbon Footprint Calculator | Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Responsive web application for calculating your carbon footprint, built with **React**, **TypeScript**, **Vite**, **MUI**, **Tailwind CSS**, and **Zustand**.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Prerequisites
 
-## Expanding the ESLint configuration
+- [Node.js](https://nodejs.org/) (v18 or newer recommended)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Installation
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+1. **Clone the repository:**
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+   ```sh
+   git clone https://github.com/your-username/carbon-footprint-calculator.git
+   cd carbon-footprint-calculator/frontend
+   ```
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+2. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+
+### Running the App
+
+Start the development server:
+
+```sh
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Running Tests
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```sh
+npm run test
 ```
+
+## Project Structure
+
+```
+frontend/
+├── public/                # Static assets
+├── src/
+│   ├── components/        # React Components (Atomic Design Structure)
+│   ├── hooks/             # Custom React hooks
+│   ├── services/          # Services contracts and implementations
+│   ├── shared/            # Shared types and constants
+│   ├── stores/            # Zustand stores for state management
+│   ├── index.css          # Tailwind CSS entry
+│   ├── main.tsx           # App entry point
+│   └── setupTests.ts      # Test setup
+└── index.html             # HTML entry point
+```
+
+## API
+
+The frontend expects a [backend](https://github.com/leovesoliveira/carbon-footprint-calculator/tree/main/backend) API running at `http://localhost:3000` with a `/calculate` endpoint that accepts a POST request with the following payload:
+
+## Customization
+
+- **Styling:** Uses both [Material UI](https://mui.com/) and [Tailwind CSS](https://tailwindcss.com/).
+- **State Management:** Uses [Zustand](https://zustand-demo.pmnd.rs/).
+- **Forms:** Uses [React Hook Form](https://react-hook-form.com/).
+
+---
